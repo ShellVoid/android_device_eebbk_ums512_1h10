@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from ums512_1h10 device
 $(call inherit-product, device/eebbk/ums512_1h10/device.mk)
 
 PRODUCT_DEVICE := ums512_1h10
-PRODUCT_NAME := omni_ums512_1h10
+PRODUCT_NAME := twrp_ums512_1h10
 PRODUCT_BRAND := EEBBK
 PRODUCT_MODEL := A7
 PRODUCT_MANUFACTURER := eebbk
